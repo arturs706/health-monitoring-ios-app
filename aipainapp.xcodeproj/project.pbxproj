@@ -1,0 +1,967 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		027A29C42B56A1A77E95CE87 /* Pods_aipainapp_aipainappUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D912E9B7F08B5E6B92F04BE9 /* Pods_aipainapp_aipainappUITests.framework */; };
+		C595AED715B0B875D8B58E70 /* Pods_aipainappTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B73F25F999A15EDD35A0DEFB /* Pods_aipainappTests.framework */; };
+		C65E70902EB9BC8FE2DB9C2C /* Pods_aipainapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0457F620D4FF418C7A759E1B /* Pods_aipainapp.framework */; };
+		E731E8372C0353DD002A0C44 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E731E8362C0353DD002A0C44 /* Colors.swift */; };
+		E731E8392C04ACA3002A0C44 /* RegisterScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E731E8382C04ACA2002A0C44 /* RegisterScreen.swift */; };
+		E731E8402C04ADD9002A0C44 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E731E83F2C04ADD9002A0C44 /* LoginScreen.swift */; };
+		E74AAE062C034179005A18D6 /* aipainappApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74AAE052C034179005A18D6 /* aipainappApp.swift */; };
+		E74AAE082C034179005A18D6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74AAE072C034179005A18D6 /* ContentView.swift */; };
+		E74AAE0A2C03417A005A18D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E74AAE092C03417A005A18D6 /* Assets.xcassets */; };
+		E74AAE0D2C03417A005A18D6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E74AAE0C2C03417A005A18D6 /* Preview Assets.xcassets */; };
+		E74AAE172C03417A005A18D6 /* aipainappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74AAE162C03417A005A18D6 /* aipainappTests.swift */; };
+		E74AAE212C03417A005A18D6 /* aipainappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74AAE202C03417A005A18D6 /* aipainappUITests.swift */; };
+		E74AAE232C03417A005A18D6 /* aipainappUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74AAE222C03417A005A18D6 /* aipainappUITestsLaunchTests.swift */; };
+		E75AB1F52C0C8A81008F2B83 /* ApiServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75AB1F42C0C8A81008F2B83 /* ApiServiceImpl.swift */; };
+		E75AB1F72C0C933F008F2B83 /* SocialLoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75AB1F62C0C933F008F2B83 /* SocialLoginRequest.swift */; };
+		E75AB1F92C0C9D4B008F2B83 /* GoogleLoginRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75AB1F82C0C9D4B008F2B83 /* GoogleLoginRepository.swift */; };
+		E75AB2052C0DAF07008F2B83 /* FacebookLoginRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75AB2042C0DAF07008F2B83 /* FacebookLoginRepository.swift */; };
+		E760EFA32C063B7400907066 /* GoogleLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E760EFA22C063B7400907066 /* GoogleLoginViewModel.swift */; };
+		E760EFA52C063B8400907066 /* FacebookLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E760EFA42C063B8400907066 /* FacebookLoginViewModel.swift */; };
+		E760EFA72C063C2800907066 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E760EFA62C063C2800907066 /* RegisterViewModel.swift */; };
+		E760EFB02C0655C500907066 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E760EFAF2C0655C500907066 /* AppDelegate.swift */; };
+		E767E2F62C0E6F82008B2AB0 /* NavComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E767E2F52C0E6F82008B2AB0 /* NavComponent.swift */; };
+		E767E2FB2C0E709F008B2AB0 /* FavouritesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E767E2FA2C0E709F008B2AB0 /* FavouritesScreen.swift */; };
+		E767E2FD2C0E7147008B2AB0 /* ConfigScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E767E2FC2C0E7147008B2AB0 /* ConfigScreen.swift */; };
+		E767E3012C0E721A008B2AB0 /* AccountScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E767E3002C0E721A008B2AB0 /* AccountScreen.swift */; };
+		E767E3052C0E72A7008B2AB0 /* PrimaryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E767E3042C0E72A7008B2AB0 /* PrimaryScreen.swift */; };
+		E767E3072C0E757E008B2AB0 /* ErrorResponseJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = E767E3062C0E757E008B2AB0 /* ErrorResponseJSON.swift */; };
+		E77146D72C0AAAC40047AB09 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77146D62C0AAAC40047AB09 /* LoginViewModel.swift */; };
+		E77146D92C0AAE070047AB09 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77146D82C0AAE070047AB09 /* LoginRequest.swift */; };
+		E77146DB2C0AAE150047AB09 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77146DA2C0AAE150047AB09 /* LoginResponse.swift */; };
+		E77146DE2C0AAE990047AB09 /* LoginRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77146DD2C0AAE990047AB09 /* LoginRepository.swift */; };
+		E77146E12C0AAF960047AB09 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77146E02C0AAF960047AB09 /* ApiService.swift */; };
+		E77146E32C0B723B0047AB09 /* CustomDialogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77146E22C0B723B0047AB09 /* CustomDialogViewModel.swift */; };
+		E77146E52C0B72840047AB09 /* CustomDialogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77146E42C0B72840047AB09 /* CustomDialogView.swift */; };
+		E7FA7BB42C0F079B00F169B3 /* TopBarComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FA7BB32C0F079B00F169B3 /* TopBarComponent.swift */; };
+		E7FA7BB62C0FD25300F169B3 /* SearchBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FA7BB52C0FD25300F169B3 /* SearchBarViewModel.swift */; };
+		E7FA7BB82C0FD28C00F169B3 /* SearchBarComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FA7BB72C0FD28C00F169B3 /* SearchBarComponent.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E74AAE132C03417A005A18D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E74AADFA2C034178005A18D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E74AAE012C034179005A18D6;
+			remoteInfo = aipainapp;
+		};
+		E74AAE1D2C03417A005A18D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E74AADFA2C034178005A18D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E74AAE012C034179005A18D6;
+			remoteInfo = aipainapp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0457F620D4FF418C7A759E1B /* Pods_aipainapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aipainapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		164DAD3A77A13428239F9352 /* Pods-aipainapp-aipainappUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aipainapp-aipainappUITests.debug.xcconfig"; path = "Target Support Files/Pods-aipainapp-aipainappUITests/Pods-aipainapp-aipainappUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3A9A9D55FE7C257CFCED243D /* Pods-aipainappTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aipainappTests.debug.xcconfig"; path = "Target Support Files/Pods-aipainappTests/Pods-aipainappTests.debug.xcconfig"; sourceTree = "<group>"; };
+		614BACBC348990C2EAFB7387 /* Pods-aipainappTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aipainappTests.release.xcconfig"; path = "Target Support Files/Pods-aipainappTests/Pods-aipainappTests.release.xcconfig"; sourceTree = "<group>"; };
+		6D130D58B7354C04169B0672 /* Pods-aipainapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aipainapp.debug.xcconfig"; path = "Target Support Files/Pods-aipainapp/Pods-aipainapp.debug.xcconfig"; sourceTree = "<group>"; };
+		7639B158DD0960B5CFFCDCA9 /* Pods-aipainapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aipainapp.release.xcconfig"; path = "Target Support Files/Pods-aipainapp/Pods-aipainapp.release.xcconfig"; sourceTree = "<group>"; };
+		B73F25F999A15EDD35A0DEFB /* Pods_aipainappTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aipainappTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA9B6B7ADC3BC77FFE31AB3E /* Pods-aipainapp-aipainappUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aipainapp-aipainappUITests.release.xcconfig"; path = "Target Support Files/Pods-aipainapp-aipainappUITests/Pods-aipainapp-aipainappUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D912E9B7F08B5E6B92F04BE9 /* Pods_aipainapp_aipainappUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aipainapp_aipainappUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E731E8362C0353DD002A0C44 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		E731E8382C04ACA2002A0C44 /* RegisterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreen.swift; sourceTree = "<group>"; };
+		E731E83F2C04ADD9002A0C44 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		E74AAE022C034179005A18D6 /* aipainapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = aipainapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E74AAE052C034179005A18D6 /* aipainappApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aipainappApp.swift; sourceTree = "<group>"; };
+		E74AAE072C034179005A18D6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E74AAE092C03417A005A18D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E74AAE0C2C03417A005A18D6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E74AAE122C03417A005A18D6 /* aipainappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = aipainappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E74AAE162C03417A005A18D6 /* aipainappTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aipainappTests.swift; sourceTree = "<group>"; };
+		E74AAE1C2C03417A005A18D6 /* aipainappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = aipainappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E74AAE202C03417A005A18D6 /* aipainappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aipainappUITests.swift; sourceTree = "<group>"; };
+		E74AAE222C03417A005A18D6 /* aipainappUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aipainappUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E75AB1F42C0C8A81008F2B83 /* ApiServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiServiceImpl.swift; sourceTree = "<group>"; };
+		E75AB1F62C0C933F008F2B83 /* SocialLoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialLoginRequest.swift; sourceTree = "<group>"; };
+		E75AB1F82C0C9D4B008F2B83 /* GoogleLoginRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleLoginRepository.swift; sourceTree = "<group>"; };
+		E75AB2042C0DAF07008F2B83 /* FacebookLoginRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookLoginRepository.swift; sourceTree = "<group>"; };
+		E760EFA22C063B7400907066 /* GoogleLoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleLoginViewModel.swift; sourceTree = "<group>"; };
+		E760EFA42C063B8400907066 /* FacebookLoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookLoginViewModel.swift; sourceTree = "<group>"; };
+		E760EFA62C063C2800907066 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		E760EFAC2C0654C100907066 /* aipainapp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = aipainapp.entitlements; sourceTree = "<group>"; };
+		E760EFAF2C0655C500907066 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E767E2F52C0E6F82008B2AB0 /* NavComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavComponent.swift; sourceTree = "<group>"; };
+		E767E2FA2C0E709F008B2AB0 /* FavouritesScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesScreen.swift; sourceTree = "<group>"; };
+		E767E2FC2C0E7147008B2AB0 /* ConfigScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigScreen.swift; sourceTree = "<group>"; };
+		E767E3002C0E721A008B2AB0 /* AccountScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountScreen.swift; sourceTree = "<group>"; };
+		E767E3042C0E72A7008B2AB0 /* PrimaryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryScreen.swift; sourceTree = "<group>"; };
+		E767E3062C0E757E008B2AB0 /* ErrorResponseJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponseJSON.swift; sourceTree = "<group>"; };
+		E77146D62C0AAAC40047AB09 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		E77146D82C0AAE070047AB09 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		E77146DA2C0AAE150047AB09 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		E77146DD2C0AAE990047AB09 /* LoginRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRepository.swift; sourceTree = "<group>"; };
+		E77146E02C0AAF960047AB09 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		E77146E22C0B723B0047AB09 /* CustomDialogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDialogViewModel.swift; sourceTree = "<group>"; };
+		E77146E42C0B72840047AB09 /* CustomDialogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDialogView.swift; sourceTree = "<group>"; };
+		E7FA7BB32C0F079B00F169B3 /* TopBarComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBarComponent.swift; sourceTree = "<group>"; };
+		E7FA7BB52C0FD25300F169B3 /* SearchBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarViewModel.swift; sourceTree = "<group>"; };
+		E7FA7BB72C0FD28C00F169B3 /* SearchBarComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarComponent.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E74AADFF2C034179005A18D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C65E70902EB9BC8FE2DB9C2C /* Pods_aipainapp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E74AAE0F2C03417A005A18D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C595AED715B0B875D8B58E70 /* Pods_aipainappTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E74AAE192C03417A005A18D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				027A29C42B56A1A77E95CE87 /* Pods_aipainapp_aipainappUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		41EE751036CD2BEB8D5B8E25 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0457F620D4FF418C7A759E1B /* Pods_aipainapp.framework */,
+				D912E9B7F08B5E6B92F04BE9 /* Pods_aipainapp_aipainappUITests.framework */,
+				B73F25F999A15EDD35A0DEFB /* Pods_aipainappTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CCD736B00F0546FF322D1BFD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6D130D58B7354C04169B0672 /* Pods-aipainapp.debug.xcconfig */,
+				7639B158DD0960B5CFFCDCA9 /* Pods-aipainapp.release.xcconfig */,
+				164DAD3A77A13428239F9352 /* Pods-aipainapp-aipainappUITests.debug.xcconfig */,
+				CA9B6B7ADC3BC77FFE31AB3E /* Pods-aipainapp-aipainappUITests.release.xcconfig */,
+				3A9A9D55FE7C257CFCED243D /* Pods-aipainappTests.debug.xcconfig */,
+				614BACBC348990C2EAFB7387 /* Pods-aipainappTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E731E8352C0353BF002A0C44 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				E767E2F72C0E703B008B2AB0 /* theme */,
+				E731E8382C04ACA2002A0C44 /* RegisterScreen.swift */,
+				E767E2FA2C0E709F008B2AB0 /* FavouritesScreen.swift */,
+				E731E83F2C04ADD9002A0C44 /* LoginScreen.swift */,
+				E767E2FC2C0E7147008B2AB0 /* ConfigScreen.swift */,
+				E767E3002C0E721A008B2AB0 /* AccountScreen.swift */,
+				E767E3042C0E72A7008B2AB0 /* PrimaryScreen.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		E731E83A2C04ACF8002A0C44 /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				E760EFA22C063B7400907066 /* GoogleLoginViewModel.swift */,
+				E760EFA42C063B8400907066 /* FacebookLoginViewModel.swift */,
+				E77146D62C0AAAC40047AB09 /* LoginViewModel.swift */,
+				E760EFA62C063C2800907066 /* RegisterViewModel.swift */,
+				E77146E22C0B723B0047AB09 /* CustomDialogViewModel.swift */,
+				E7FA7BB52C0FD25300F169B3 /* SearchBarViewModel.swift */,
+			);
+			path = viewmodel;
+			sourceTree = "<group>";
+		};
+		E74AADF92C034178005A18D6 = {
+			isa = PBXGroup;
+			children = (
+				E74AAE042C034179005A18D6 /* aipainapp */,
+				E74AAE152C03417A005A18D6 /* aipainappTests */,
+				E74AAE1F2C03417A005A18D6 /* aipainappUITests */,
+				E74AAE032C034179005A18D6 /* Products */,
+				CCD736B00F0546FF322D1BFD /* Pods */,
+				41EE751036CD2BEB8D5B8E25 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E74AAE032C034179005A18D6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E74AAE022C034179005A18D6 /* aipainapp.app */,
+				E74AAE122C03417A005A18D6 /* aipainappTests.xctest */,
+				E74AAE1C2C03417A005A18D6 /* aipainappUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E74AAE042C034179005A18D6 /* aipainapp */ = {
+			isa = PBXGroup;
+			children = (
+				E760EFAC2C0654C100907066 /* aipainapp.entitlements */,
+				E74AAE342C034386005A18D6 /* Util */,
+				E74AAE332C034380005A18D6 /* Presentation */,
+				E74AAE322C034379005A18D6 /* DI */,
+				E74AAE312C034368005A18D6 /* Domain */,
+				E74AAE302C034358005A18D6 /* Data */,
+				E74AAE2F2C0341AE005A18D6 /* App */,
+			);
+			path = aipainapp;
+			sourceTree = "<group>";
+		};
+		E74AAE0B2C03417A005A18D6 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E74AAE0C2C03417A005A18D6 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E74AAE152C03417A005A18D6 /* aipainappTests */ = {
+			isa = PBXGroup;
+			children = (
+				E74AAE162C03417A005A18D6 /* aipainappTests.swift */,
+			);
+			path = aipainappTests;
+			sourceTree = "<group>";
+		};
+		E74AAE1F2C03417A005A18D6 /* aipainappUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E74AAE202C03417A005A18D6 /* aipainappUITests.swift */,
+				E74AAE222C03417A005A18D6 /* aipainappUITestsLaunchTests.swift */,
+			);
+			path = aipainappUITests;
+			sourceTree = "<group>";
+		};
+		E74AAE2F2C0341AE005A18D6 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E74AAE052C034179005A18D6 /* aipainappApp.swift */,
+				E760EFAF2C0655C500907066 /* AppDelegate.swift */,
+				E74AAE072C034179005A18D6 /* ContentView.swift */,
+				E74AAE092C03417A005A18D6 /* Assets.xcassets */,
+				E74AAE0B2C03417A005A18D6 /* Preview Content */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E74AAE302C034358005A18D6 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				E77146DF2C0AAF7E0047AB09 /* remote */,
+				E77146DC2C0AAE7D0047AB09 /* repository */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		E74AAE312C034368005A18D6 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				E77146D82C0AAE070047AB09 /* LoginRequest.swift */,
+				E77146DA2C0AAE150047AB09 /* LoginResponse.swift */,
+				E75AB1F62C0C933F008F2B83 /* SocialLoginRequest.swift */,
+				E767E3062C0E757E008B2AB0 /* ErrorResponseJSON.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		E74AAE322C034379005A18D6 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		E74AAE332C034380005A18D6 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				E767E2F42C0E6F59008B2AB0 /* components */,
+				E731E83A2C04ACF8002A0C44 /* viewmodel */,
+				E731E8352C0353BF002A0C44 /* view */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		E74AAE342C034386005A18D6 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		E767E2F42C0E6F59008B2AB0 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				E77146E42C0B72840047AB09 /* CustomDialogView.swift */,
+				E767E2F52C0E6F82008B2AB0 /* NavComponent.swift */,
+				E7FA7BB32C0F079B00F169B3 /* TopBarComponent.swift */,
+				E7FA7BB72C0FD28C00F169B3 /* SearchBarComponent.swift */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
+		E767E2F72C0E703B008B2AB0 /* theme */ = {
+			isa = PBXGroup;
+			children = (
+				E731E8362C0353DD002A0C44 /* Colors.swift */,
+			);
+			path = theme;
+			sourceTree = "<group>";
+		};
+		E77146DC2C0AAE7D0047AB09 /* repository */ = {
+			isa = PBXGroup;
+			children = (
+				E77146DD2C0AAE990047AB09 /* LoginRepository.swift */,
+				E75AB1F82C0C9D4B008F2B83 /* GoogleLoginRepository.swift */,
+				E75AB2042C0DAF07008F2B83 /* FacebookLoginRepository.swift */,
+			);
+			path = repository;
+			sourceTree = "<group>";
+		};
+		E77146DF2C0AAF7E0047AB09 /* remote */ = {
+			isa = PBXGroup;
+			children = (
+				E77146E02C0AAF960047AB09 /* ApiService.swift */,
+				E75AB1F42C0C8A81008F2B83 /* ApiServiceImpl.swift */,
+			);
+			path = remote;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E74AAE012C034179005A18D6 /* aipainapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E74AAE262C03417A005A18D6 /* Build configuration list for PBXNativeTarget "aipainapp" */;
+			buildPhases = (
+				5A5EC28B5877EED42E87C2A3 /* [CP] Check Pods Manifest.lock */,
+				E74AADFE2C034179005A18D6 /* Sources */,
+				E74AADFF2C034179005A18D6 /* Frameworks */,
+				E74AAE002C034179005A18D6 /* Resources */,
+				AA83031518780A306D2C117E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = aipainapp;
+			productName = aipainapp;
+			productReference = E74AAE022C034179005A18D6 /* aipainapp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E74AAE112C03417A005A18D6 /* aipainappTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E74AAE292C03417A005A18D6 /* Build configuration list for PBXNativeTarget "aipainappTests" */;
+			buildPhases = (
+				6AF6A9A1AED02204F19E6D7C /* [CP] Check Pods Manifest.lock */,
+				E74AAE0E2C03417A005A18D6 /* Sources */,
+				E74AAE0F2C03417A005A18D6 /* Frameworks */,
+				E74AAE102C03417A005A18D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E74AAE142C03417A005A18D6 /* PBXTargetDependency */,
+			);
+			name = aipainappTests;
+			productName = aipainappTests;
+			productReference = E74AAE122C03417A005A18D6 /* aipainappTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E74AAE1B2C03417A005A18D6 /* aipainappUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E74AAE2C2C03417A005A18D6 /* Build configuration list for PBXNativeTarget "aipainappUITests" */;
+			buildPhases = (
+				CD809B596DAF8E22277F4B85 /* [CP] Check Pods Manifest.lock */,
+				E74AAE182C03417A005A18D6 /* Sources */,
+				E74AAE192C03417A005A18D6 /* Frameworks */,
+				E74AAE1A2C03417A005A18D6 /* Resources */,
+				2CEA7DDCBC1F15A51E27B867 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E74AAE1E2C03417A005A18D6 /* PBXTargetDependency */,
+			);
+			name = aipainappUITests;
+			productName = aipainappUITests;
+			productReference = E74AAE1C2C03417A005A18D6 /* aipainappUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E74AADFA2C034178005A18D6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					E74AAE012C034179005A18D6 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					E74AAE112C03417A005A18D6 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = E74AAE012C034179005A18D6;
+					};
+					E74AAE1B2C03417A005A18D6 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = E74AAE012C034179005A18D6;
+					};
+				};
+			};
+			buildConfigurationList = E74AADFD2C034178005A18D6 /* Build configuration list for PBXProject "aipainapp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E74AADF92C034178005A18D6;
+			packageReferences = (
+				E760EFA82C06478600907066 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
+			);
+			productRefGroup = E74AAE032C034179005A18D6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E74AAE012C034179005A18D6 /* aipainapp */,
+				E74AAE112C03417A005A18D6 /* aipainappTests */,
+				E74AAE1B2C03417A005A18D6 /* aipainappUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E74AAE002C034179005A18D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E74AAE0D2C03417A005A18D6 /* Preview Assets.xcassets in Resources */,
+				E74AAE0A2C03417A005A18D6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E74AAE102C03417A005A18D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E74AAE1A2C03417A005A18D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2CEA7DDCBC1F15A51E27B867 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-aipainapp-aipainappUITests/Pods-aipainapp-aipainappUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-aipainapp-aipainappUITests/Pods-aipainapp-aipainappUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-aipainapp-aipainappUITests/Pods-aipainapp-aipainappUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A5EC28B5877EED42E87C2A3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-aipainapp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6AF6A9A1AED02204F19E6D7C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-aipainappTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA83031518780A306D2C117E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-aipainapp/Pods-aipainapp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-aipainapp/Pods-aipainapp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-aipainapp/Pods-aipainapp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD809B596DAF8E22277F4B85 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-aipainapp-aipainappUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E74AADFE2C034179005A18D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E760EFA52C063B8400907066 /* FacebookLoginViewModel.swift in Sources */,
+				E767E3072C0E757E008B2AB0 /* ErrorResponseJSON.swift in Sources */,
+				E75AB1F52C0C8A81008F2B83 /* ApiServiceImpl.swift in Sources */,
+				E77146DE2C0AAE990047AB09 /* LoginRepository.swift in Sources */,
+				E731E8392C04ACA3002A0C44 /* RegisterScreen.swift in Sources */,
+				E77146DB2C0AAE150047AB09 /* LoginResponse.swift in Sources */,
+				E7FA7BB62C0FD25300F169B3 /* SearchBarViewModel.swift in Sources */,
+				E767E2F62C0E6F82008B2AB0 /* NavComponent.swift in Sources */,
+				E7FA7BB82C0FD28C00F169B3 /* SearchBarComponent.swift in Sources */,
+				E74AAE082C034179005A18D6 /* ContentView.swift in Sources */,
+				E767E2FB2C0E709F008B2AB0 /* FavouritesScreen.swift in Sources */,
+				E767E3052C0E72A7008B2AB0 /* PrimaryScreen.swift in Sources */,
+				E75AB1F72C0C933F008F2B83 /* SocialLoginRequest.swift in Sources */,
+				E760EFB02C0655C500907066 /* AppDelegate.swift in Sources */,
+				E760EFA72C063C2800907066 /* RegisterViewModel.swift in Sources */,
+				E77146E52C0B72840047AB09 /* CustomDialogView.swift in Sources */,
+				E7FA7BB42C0F079B00F169B3 /* TopBarComponent.swift in Sources */,
+				E731E8402C04ADD9002A0C44 /* LoginScreen.swift in Sources */,
+				E767E3012C0E721A008B2AB0 /* AccountScreen.swift in Sources */,
+				E75AB2052C0DAF07008F2B83 /* FacebookLoginRepository.swift in Sources */,
+				E731E8372C0353DD002A0C44 /* Colors.swift in Sources */,
+				E74AAE062C034179005A18D6 /* aipainappApp.swift in Sources */,
+				E75AB1F92C0C9D4B008F2B83 /* GoogleLoginRepository.swift in Sources */,
+				E77146D72C0AAAC40047AB09 /* LoginViewModel.swift in Sources */,
+				E760EFA32C063B7400907066 /* GoogleLoginViewModel.swift in Sources */,
+				E767E2FD2C0E7147008B2AB0 /* ConfigScreen.swift in Sources */,
+				E77146E12C0AAF960047AB09 /* ApiService.swift in Sources */,
+				E77146D92C0AAE070047AB09 /* LoginRequest.swift in Sources */,
+				E77146E32C0B723B0047AB09 /* CustomDialogViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E74AAE0E2C03417A005A18D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E74AAE172C03417A005A18D6 /* aipainappTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E74AAE182C03417A005A18D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E74AAE232C03417A005A18D6 /* aipainappUITestsLaunchTests.swift in Sources */,
+				E74AAE212C03417A005A18D6 /* aipainappUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E74AAE142C03417A005A18D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E74AAE012C034179005A18D6 /* aipainapp */;
+			targetProxy = E74AAE132C03417A005A18D6 /* PBXContainerItemProxy */;
+		};
+		E74AAE1E2C03417A005A18D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E74AAE012C034179005A18D6 /* aipainapp */;
+			targetProxy = E74AAE1D2C03417A005A18D6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E74AAE242C03417A005A18D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E74AAE252C03417A005A18D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E74AAE272C03417A005A18D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D130D58B7354C04169B0672 /* Pods-aipainapp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = aipainapp/aipainapp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"aipainapp/App/Preview Content\"";
+				DEVELOPMENT_TEAM = 73A6U57YR3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = aipainapp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.uk.aipainapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E74AAE282C03417A005A18D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7639B158DD0960B5CFFCDCA9 /* Pods-aipainapp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = aipainapp/aipainapp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"aipainapp/App/Preview Content\"";
+				DEVELOPMENT_TEAM = 73A6U57YR3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = aipainapp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.uk.aipainapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E74AAE2A2C03417A005A18D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A9A9D55FE7C257CFCED243D /* Pods-aipainappTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.uk.aipainappTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/aipainapp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/aipainapp";
+			};
+			name = Debug;
+		};
+		E74AAE2B2C03417A005A18D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 614BACBC348990C2EAFB7387 /* Pods-aipainappTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.uk.aipainappTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/aipainapp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/aipainapp";
+			};
+			name = Release;
+		};
+		E74AAE2D2C03417A005A18D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 164DAD3A77A13428239F9352 /* Pods-aipainapp-aipainappUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.uk.aipainappUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = aipainapp;
+			};
+			name = Debug;
+		};
+		E74AAE2E2C03417A005A18D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA9B6B7ADC3BC77FFE31AB3E /* Pods-aipainapp-aipainappUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.uk.aipainappUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = aipainapp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E74AADFD2C034178005A18D6 /* Build configuration list for PBXProject "aipainapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E74AAE242C03417A005A18D6 /* Debug */,
+				E74AAE252C03417A005A18D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E74AAE262C03417A005A18D6 /* Build configuration list for PBXNativeTarget "aipainapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E74AAE272C03417A005A18D6 /* Debug */,
+				E74AAE282C03417A005A18D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E74AAE292C03417A005A18D6 /* Build configuration list for PBXNativeTarget "aipainappTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E74AAE2A2C03417A005A18D6 /* Debug */,
+				E74AAE2B2C03417A005A18D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E74AAE2C2C03417A005A18D6 /* Build configuration list for PBXNativeTarget "aipainappUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E74AAE2D2C03417A005A18D6 /* Debug */,
+				E74AAE2E2C03417A005A18D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E760EFA82C06478600907066 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/facebook/facebook-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 14.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+	};
+	rootObject = E74AADFA2C034178005A18D6 /* Project object */;
+}

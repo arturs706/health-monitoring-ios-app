@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleURLTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleURLSchemes</key>
+            <array>
+				<string>com.googleusercontent.apps.696034599107-6hajma14i4u7dg7mbffm5hh96jelqeml</string>
+                <string>fb859316752311273</string>
+            </array>
+        </dict>
+    </array>
+	<key>GIDClientID</key>
+	<string>696034599107-6hajma14i4u7dg7mbffm5hh96jelqeml.apps.googleusercontent.com</string>
+    <key>FacebookAppID</key>
+    <string>859316752311273</string>
+    <key>FacebookClientToken</key>
+    <string>ff1cc6c5e4a51b59231db188ecb9e63b</string>
+    <key>FacebookDisplayName</key>
+    <string>aipainapp</string>
+    <key>NSAppTransportSecurity</key>
+    <dict>
+        <key>NSExceptionDomains</key>
+        <dict>
+            <key>0.0.0.0</key>
+            <dict>
+                <key>NSExceptionAllowsInsecureHTTPLoads</key>
+                <true/>
+                <key>NSIncludesSubdomains</key>
+                <true/>
+            </dict>
+        </dict>
+    </dict>
+</dict>
+</plist>
