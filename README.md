@@ -47,5 +47,3 @@ Develop an iOS application to provide a seamless user experience for AiPainApp, 
 - **Community Engagement**: Foster a supportive environment for users to connect and share experiences.
 
 This iOS application for AiPainApp aims to provide a comprehensive platform for health monitoring and support, focusing on usability, personalization, and community engagement to enhance user well-being.
-# health-monitoring-ios-app-
-# health-monitoring-ios-app
